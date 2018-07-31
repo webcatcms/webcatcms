@@ -10,8 +10,6 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__), 
     'aliases' => [
-            '@admin' => '@vendor/admin/asset',
-            '@admin/widgets' => '@vendor/admin/widgets',
             
         ],
     'language' => 'ua-UA',
@@ -19,13 +17,6 @@ return [
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
-       'view' => [
-         'theme' => [
-             'pathMap' => [
-                '@app/views' => '@vendor/admin/views'
-             ],
-         ],
-    ],
          'i18n' => [
         'translations' => [
             'app*' => [
