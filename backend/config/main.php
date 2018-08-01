@@ -10,7 +10,7 @@ return [
     'id' => 'app-backend',
     'basePath' => dirname(__DIR__), 
     'aliases' => [
-            
+          //  '@widgets' => dirname(dirname(__DIR__)) . '/widgets',
         ],
     'language' => 'ua-UA',
     'controllerNamespace' => 'backend\controllers',

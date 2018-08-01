@@ -1,4 +1,4 @@
-<?php use admin\widgets\Menu; ?>
+<?php use widgets\Menu; ?>
 <aside class="main-sidebar">
 
     <section class="sidebar">

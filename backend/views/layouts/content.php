@@ -1,6 +1,6 @@
 <?php
 use yii\widgets\Breadcrumbs;
-use admin\widgets\Alert;
+use widgets\Alert;
 ?>
 <div class="content-wrapper">
     <section class="content-header">

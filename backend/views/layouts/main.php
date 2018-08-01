@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use backend\assets\AppAsset as Asset;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -16,10 +17,10 @@ if (Yii::$app->controller->action->id === 'login') {
     );
 } else {
 
-    admin\AdminLteAsset::register($this);
+    Asset::register($this);
     //dmstr\web\AdminLteAsset::register($this);
 
-    $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/admin/dist');
+    $directoryAsset = Yii::$app->assetManager->getPublishedUrl('backend\web');
     ?>
     <?php $this->beginPage() ?>
     <!DOCTYPE html>
