@@ -8,7 +8,8 @@ return [
     'rememberMe' => 'Запам`ятати мене',
     'required_message' => 'Це поле має бути заповнене',
     'incorrect_message' => 'Логін або пароль невірний',
-    'sing_in' => 'Вхід',
+    'sing_in' => 'Увійти',
+    'sing_out' => 'Вийти'
 ];
 
 

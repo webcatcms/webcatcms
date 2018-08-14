@@ -14,6 +14,7 @@ return [
         ],
     'language' => 'ua-UA',
     'controllerNamespace' => 'backend\controllers',
+   // 'catchAll' => ['site/debug'],
     'bootstrap' => ['log'],
     'modules' => [],
     'components' => [
@@ -60,14 +61,16 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'rules' => [
+            //'enableStrictParsing' => false,
+           'rules' => [
+               //'<alias:\w+>' => 'site/<alias>',
             ],
         ],
-        */
+        
     ],
     'params' => $params,
 ];

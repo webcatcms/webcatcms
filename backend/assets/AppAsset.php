@@ -4,6 +4,7 @@ namespace backend\assets;
 
 use yii\web\AssetBundle;
 
+
 /**
  * Main backend application asset bundle.
  */
@@ -11,18 +12,21 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
+    
     public $css = [
        'css/AdminLTE.min.css',
+       
     ];
     public $js = [
        'js/adminlte.min.js'
     ];
     public $depends = [
-        'rmrevin\yii\fontawesome\AssetBundle',
+        'yii\fontawesome\AssetFontAwesome',
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
     ];
+    
     
     public $skin = '_all-skins';
     
