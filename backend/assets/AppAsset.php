@@ -12,6 +12,7 @@ class AppAsset extends AssetBundle
 {
     public $basePath = '@webroot';
     public $baseUrl = '@web';
+   
     
     public $css = [
        'css/AdminLTE.min.css',
@@ -21,7 +22,7 @@ class AppAsset extends AssetBundle
        'js/adminlte.min.js'
     ];
     public $depends = [
-        'yii\fontawesome\AssetFontAwesome',
+        'plugins\fontawesome\AssetFontAwesome',
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
@@ -40,6 +41,7 @@ class AppAsset extends AssetBundle
 
             $this->css[] = sprintf('css/skins/%s.min.css', $this->skin);
         }
+        
 
         parent::init();
     }
